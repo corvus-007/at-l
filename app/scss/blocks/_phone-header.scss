@@ -1,0 +1,12 @@
+.phone-header {
+  font-weight: 600;
+  font-size: rem(30);
+  font-family: $secondary-font;
+  color: $white-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+  }
+}

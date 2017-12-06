@@ -1,0 +1,22 @@
+.section-types-transfer {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.section-types-transfer__module {
+  padding-top: ($grid-gutter-width * 2);
+  padding-bottom: ($grid-gutter-width * 2);
+
+  &--top {
+    background-color: $accent-color;
+    color: #fff;
+  }
+
+  &--bottom {
+
+  }
+}
+
+.section-types-transfer__title {
+  color: #fff;
+}

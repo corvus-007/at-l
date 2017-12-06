@@ -1,0 +1,38 @@
+.figures-types-transfer {
+  @include mq-min(736px) {
+    display: flex;
+  }
+}
+
+.figures-types-transfer__item {
+  margin-bottom: 3rem;
+  text-align: center;
+
+  @include mq-min(736px) {
+    width: calc((100% - 1 * 3rem) / 2);
+    margin: 0;
+    margin-right: 3rem;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.figures-types-transfer__item-imagebox {
+  margin-bottom: 0.5rem;
+
+  @include mq-min(736px) {
+    @include make-fit-object(500, 280);
+  }
+}
+
+.figures-types-transfer__item-image {
+
+}
+
+.figures-types-transfer__item-caption {
+  @include clear-mr-edges-elem();
+
+  font-weight: 700;
+}

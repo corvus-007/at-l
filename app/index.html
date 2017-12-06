@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    @@include('blocks/main-header.html')
+
+    <section class="welcome">
+      <div class="welcome__inner container">
+        <h1 class="welcome__title">
+          Перевозки
+          из&nbsp;Брянска
+          в любой аэропорт
+          Москвы
+        </h1>
+        <a class="welcome__pointer" href="#about"></a>
+      </div>
+    </section>
+
+    <main class="main">
+      <section class="section section-about-us">
+        <div class="container container--slim">
+          <h2 class="section__title">О компании АТ-Л</h2>
+          <div class="section__lead">
+            <p>Компания «АТ-Л» осуществляет перевозки на микроавтобусах и легковых машинах  из Брянска в любой аэропорт г. Москвы: Домодедово, Шереметьево, Внуково. Это очень удобный  способ перемещения туристов до аэропорта и обратно.</p>
+          </div>
+        </div>
+        <ul class="about-us">
+          <li class="about-us__item">
+            <div class="about-us__item-imagebox">
+              <img class="about-us__item-image" src="https://picsum.photos/1000/600?image=1067" alt="">
+            </div>
+            <div class="about-us__item-text">
+              <p><strong>Индивидуальный трансфер специально для Вас!</strong> Быстро, с комфортом, безопасно (в нашем штате вежливые и аккуратные водители-профессионалы) Вы доберетесь из Брянска в Шереметьево, Внуково или Домодедово. Вовремя, без задержек доставят к пункту назначения, что избавит Вас от ненужной головной боли и переживаний.</p>
+            </div>
+          </li>
+          <li class="about-us__item">
+            <div class="about-us__item-imagebox">
+              <img class="about-us__item-image" src="https://picsum.photos/1000/600?image=1083" alt="">
+            </div>
+            <div class="about-us__item-text">
+              <p><strong>Встреча путешественника в аэропорту и доставка его по месту назначения</strong> также входит в состав наших услуг. Заблаговременно позвоните и сделайте заказ на услугу. Водитель обязательно дождется, встретит Вас по прилету, проводит к парковке и отвезет Вас на указанный адрес.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section section-types-transfer">
+        <div class="section-types-transfer__module section-types-transfer__module--top">
+          <div class="container container--slim">
+            <h2 class="section__title section-types-transfer__title">В нашем автопарке имеются микроавтобусы для группового и индивидуального трансфера</h2>
+            <div class="section__lead">
+              <p>Перед любой серьезной поездкой — неважно это отдых или командировка — многое нужно успеть. Собрать вещи, полить цветы, предупредить соседей, перекрыть воду и газ и прочие мелочи, которые не дают сосредоточится на предстоящем путешествии. А в голове, помимо этого постоянно мелькают мысли: «Как добраться до Аэропорта? На поезде, или лучше на автобусе? А во сколько выехать, чтобы успеть на регистрацию? Куда бы деньги спрятать, чтобы в метро не украли?».</p>
+              <p><b>Знакомая ситуация? Если да, то ООО «АТ-Л» Вам поможет. Мы предлагаем поездки из Брянска в аэропорт Домодедово Внуково Шереметьево и обратно.</b></p>
+            </div>
+          </div>
+          <div class="container">
+            <div class="figures-types-transfer">
+              <figure class="figures-types-transfer__item">
+                <div class="figures-types-transfer__item-imagebox">
+                  <img class="figures-types-transfer__item-image" src="https://picsum.photos/1000/600?image=1068" alt="">
+                </div>
+                <figcaption class="figures-types-transfer__item-caption">
+                  <p>Групповой трансфер</p>
+                </figcaption>
+              </figure>
+              <figure class="figures-types-transfer__item">
+                <div class="figures-types-transfer__item-imagebox">
+                  <img class="figures-types-transfer__item-image" src="https://picsum.photos/1000/600?image=1059" alt="">
+                </div>
+                <figcaption class="figures-types-transfer__item-caption">
+                  <p>Индивидуальный трансфер</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="section-types-transfer__module section-types-transfer__module--bottom">
+            <div class="tabs-types-transfer js-tabs">
+              <ul class="tabs-types-transfer-menu">
+                <li class="tabs-types-transfer-menu__item">
+                  <a class="tabs-types-transfer-menu__link" href="#tab-group">
+                    <span>Групповой трансфер</span>
+                  </a>
+                </li>
+                <li class="tabs-types-transfer-menu__item">
+                  <a class="tabs-types-transfer-menu__link" href="#tab-private">
+                    <span>Индивидуальный трансфер</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="tabs-types-transfer-pane" id='tab-group'>
+                <div class="tabs-types-transfer-pane__inner">
+                  <h3 class="visuallyhidden">Групповой трансфер</h3>
+                  <p><b>Самый экономичный трансфер — групповой</b>. В зависимости от количества пассажиров, микроавтобус или легковой автомобиль движется по жесткому графику и доставляет клиентов в определенные места в городе или в аэропорт. Стоимость такой поездки 1500 рублей в одну сторону.</p>
+                  <table>
+                    <thead>
+                      <th><span class="visuallyhidden">Возвраст</span></th>
+                      <th>Внуково</th>
+                      <th>Домодедово</th>
+                      <th>Шереметьево</th>
+                      <th>Метро Румняцево</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-th="Возвраст"><b>Взрослый</b></td>
+                        <td data-th="Внуково">1500</td>
+                        <td data-th="Домодедово">1600</td>
+                        <td data-th="Шереметьево">1700</td>
+                        <td data-th="Метро Румняцево">1300</td>
+                      </tr>
+                      <tr>
+                        <td data-th="Возвраст"><b>Детский</b></td>
+                        <td data-th="Внуково">1200</td>
+                        <td data-th="Домодедово">1300</td>
+                        <td data-th="Шереметьево">1400</td>
+                        <td data-th="Метро Румняцево">1300</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="tabs-types-transfer-pane" id='tab-private'>
+                <div class="tabs-types-transfer-pane__inner">
+                  <h3 class="visuallyhidden">Индивидуальный трансфер</h3>
+                  <p><b>Самый дорогой трансфер — индивидуальный</b>. В зависимости от количества пассажиров, микроавтобус или легковой автомобиль движется по жесткому графику и доставляет клиентов в определенные места в городе или в аэропорт. Стоимость такой поездки 1500 рублей в одну сторону.</p>
+                  <table>
+                    <thead>
+                      <th><span class="visuallyhidden">Возвраст</span></th>
+                      <th>Внуково</th>
+                      <th>Домодедово</th>
+                      <th>Шереметьево</th>
+                      <th>Метро Румняцево</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-th="Возвраст"><b>Взрослый</b></td>
+                        <td data-th="Внуково">1800</td>
+                        <td data-th="Домодедово">2100</td>
+                        <td data-th="Шереметьево">2200</td>
+                        <td data-th="Метро Румняцево">1480</td>
+                      </tr>
+                      <tr>
+                        <td data-th="Возвраст"><b>Детский</b></td>
+                        <td data-th="Внуково">1600</td>
+                        <td data-th="Домодедово">1700</td>
+                        <td data-th="Шереметьево">1550</td>
+                        <td data-th="Метро Румняцево">1500</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('blocks/main-footer.html')
+  </div>
+  @@include('blocks/site-scripts.html')
+</body>
+</html>

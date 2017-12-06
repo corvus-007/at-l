@@ -1,0 +1,19 @@
+.tabs-types-transfer-pane {
+  @include make-container();
+}
+
+.tabs-types-transfer-pane__inner {
+  @include make-textual();
+
+  padding: 1rem 0;
+
+  table {
+    td:first-child {
+      text-align: left;
+    }
+  }
+
+  @include mq-min(700px) {
+    padding: 2rem;
+  }
+}

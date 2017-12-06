@@ -1,0 +1,14 @@
+.logo-header {
+
+  @include mq-min(568px) {
+    flex-shrink: 0;
+  }
+}
+
+.logo-header__link {
+  display: block;
+}
+
+.logo-header__image {
+  display: block;
+}

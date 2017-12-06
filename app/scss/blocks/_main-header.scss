@@ -1,0 +1,19 @@
+.main-header {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: $accent-color;
+  color: $white-color;
+}
+
+.main-header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header__column {
+  margin-right: 2.5rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,39 @@
+.links-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links-header__item {
+  margin-right: 1.5rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--callback {
+
+  }
+
+  &--signin {
+
+  }
+
+  &--phone {
+
+  }
+
+
+  @include mq-max(666px) {
+    &--signin {
+      margin-right: 0;
+    }
+
+    &--phone {
+      display: none;
+    }
+  }
+
+  @include mq-max(567px) {
+  }
+}

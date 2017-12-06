@@ -1,0 +1,35 @@
+.action-header {
+  display: inline-flex;
+  align-items: center;
+  font-size: rem(22);
+  color: $white-color;
+  white-space: nowrap;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+  }
+}
+
+.action-header__icon {
+  background-color: currentColor;
+
+  @include mq-min(992px) {
+    margin-right: 0.5rem;
+  }
+}
+
+.action-header__label {
+  border-bottom: 1px solid;
+  transition: border-bottom-color $duration;
+
+  @include mq-max(991px) {
+    font-size: 0;
+  }
+}
+
+.action-header:hover .action-header__label,
+.action-header:focus .action-header__label {
+  border-bottom-color: transparent;
+}
