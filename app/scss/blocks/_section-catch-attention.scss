@@ -1,0 +1,30 @@
+.section-catch-attention {
+  position: relative;
+  padding-top: ($grid-gutter-width * 3.5);
+  padding-bottom: ($grid-gutter-width * 3.5);
+  color: #fff;
+  background: #494B67 url("https://picsum.photos/1000/600?image=1067") no-repeat center / cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(#000, 0.3);
+    background-image: repeating-linear-gradient(-45deg, rgba(#000, 0.05) 0, rgba(#000, 0.05) 3px, rgba(#000, 0) 3px, rgba(#000, 0) 7px);
+  }
+}
+
+.section-catch-attention__inner {
+  position: relative;
+}
+
+.section-catch-attention__title {
+  color: #fff;
+}
+
+.section-catch-attention__lead {
+  margin-bottom: 0;
+}
