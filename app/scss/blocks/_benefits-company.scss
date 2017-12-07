@@ -1,0 +1,96 @@
+.benefits-company {
+  @include clear-list();
+
+  @include mq-min(768px) {
+    display: flex;
+  }
+}
+
+.benefits-company__item {
+  margin-bottom: 3rem;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include mq-min(768px) {
+    width: calc((100% - 2 * 2rem) / 3);
+    margin-right: 2rem;
+    margin-bottom: 0;
+    font-size: rem(16);
+    text-align: left;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  @include mq-min(992px) {
+    font-size: rem(18);
+  }
+
+  @include mq-min(1280px) {
+    font-size: rem(20);
+  }
+}
+
+.benefits-company__title {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: rem(25);
+  font-family: $secondary-font;
+  text-transform: uppercase;
+  line-height: normal;
+  color: $accent-color;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &--1 {
+    &::before {
+      background-image: url("");
+      background-color: #0074E4;
+    }
+  }
+
+  &--2 {
+    &::before {
+      background-image: url("");
+      background-color: #00B8C0;
+    }
+  }
+
+  &--3 {
+    &::before {
+      background-image: url("");
+      background-color: #E9FFB2;
+    }
+  }
+
+  @include mq-min(768px) {
+    font-size: rem(22);
+  }
+
+  @include mq-min(992px) {
+    font-size: rem(30);
+  }
+
+  @include mq-min(1280px) {
+    font-size: rem(40);
+  }
+}
+
+.benefits-company__text {
+  @include clear-mr-edges-elem();
+}
