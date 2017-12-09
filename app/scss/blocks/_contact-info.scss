@@ -1,0 +1,71 @@
+.contact-info {
+
+}
+
+.contact-info__logo {
+  margin-bottom: 2rem;
+}
+
+.contact-info__list {
+  @include clear-list();
+}
+
+.contact-info__item {
+  margin-bottom: 1.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contact-info__icon {
+  position: relative;
+  display: inline-block;
+  width: rem(48);
+  height: rem(48);
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &--location {
+    background-image: url("//placehold.it/48x48/EE046C/fff");
+  }
+
+  &--tel {
+    background-image: url("//placehold.it/48x48/F75940/fff");
+  }
+
+  &--email {
+    background-image: url("//placehold.it/48x48/3F6699/fff");
+  }
+
+  @include mq-min (1280px) {
+    &::before {
+      content: "";
+      position: absolute;
+      right: 40%;
+      bottom: 40%;
+      z-index: -1;
+      width: rem(48);
+      height: rem(48);
+      border-radius: 50%;
+      background-color: #ededed;
+    }
+  }
+}
+
+.contact-info__text {
+  display: inline-block;
+  vertical-align: middle;
+
+  a {
+    color: currentColor;
+    text-decoration: none;
+  }
+}
+
+.contact-info__label {
+  font-weight: 600;
+}

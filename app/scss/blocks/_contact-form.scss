@@ -1,0 +1,31 @@
+.contact-form {
+
+  fieldset {
+    border: 0;
+    padding: 0.01em 0 0 0;
+    margin: 0;
+    min-width: 0;
+  }
+
+  legend {
+    display: block;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2rem;
+    padding: 0;
+    font-weight: 700;
+    font-size: rem(34);
+    line-height: 1.25;
+    font-family: $secondary-font;
+    text-transform: uppercase;
+    color: $accent-color;
+
+    @include mq-min(568px) {
+      font-size: rem(40);
+    }
+
+    @include mq-min(768px) {
+      font-size: rem(45);
+    }
+  }
+}

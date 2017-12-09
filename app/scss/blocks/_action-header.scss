@@ -1,7 +1,7 @@
 .action-header {
   display: inline-flex;
   align-items: center;
-  font-size: rem(22);
+  font-size: rem(18);
   color: $white-color;
   white-space: nowrap;
   text-decoration: none;
@@ -9,6 +9,14 @@
   &:hover,
   &:focus {
     color: $white-color;
+  }
+
+  @include mq-min(1024px) {
+    font-size: rem(19);
+  }
+
+  @include mq-min(1280px) {
+    font-size: rem(22);
   }
 }
 

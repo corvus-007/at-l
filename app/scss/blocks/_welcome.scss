@@ -1,6 +1,5 @@
 .welcome {
   background: #fff4e2 url("../images/bg-welcome.jpg") no-repeat bottom / cover;
-  outline: 1px solid tomato;
 }
 
 .welcome__inner {
@@ -34,5 +33,46 @@
   @include mq-min(1280px) {
     width: 45%;
     font-size: rem(58);
+  }
+}
+
+.welcome__pointer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1rem;
+  z-index: 1;
+  width: 1.5rem;
+  height: 2.4rem;
+  border: 2px solid #fff;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.7rem / 0.65rem;
+  box-sizing: border-box;
+  background-color: rgba(#000, 0.1);
+  animation: pulse 1.7s infinite alternate linear;
+  will-change: box-shadow;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    right: 0;
+    width: 2px;
+    height: 12px;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 15px 4px rgba(#000, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 20px 6px rgba(#000, 0.2);
   }
 }

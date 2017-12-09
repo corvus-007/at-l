@@ -1,6 +1,6 @@
 .phone-header {
   font-weight: 600;
-  font-size: rem(30);
+  font-size: rem(26);
   font-family: $secondary-font;
   color: $white-color;
   text-decoration: none;
@@ -8,5 +8,13 @@
   &:hover,
   &:focus {
     color: $white-color;
+  }
+
+  @include mq-min(992px) {
+    // font-size: rem(30);
+  }
+
+  @include mq-min(1024px) {
+    font-size: rem(30);
   }
 }

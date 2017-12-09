@@ -21,9 +21,16 @@
 
 .figures-types-transfer__item-imagebox {
   margin-bottom: 0.5rem;
+  border: 5px solid rgba(#fff, 0.15);
+  border-radius: 2px;
 
   @include mq-min(736px) {
     @include make-fit-object(500, 280);
+    border-width: 10px;
+  }
+
+  @include mq-min(992px) {
+    border-width: 10px;
   }
 }
 
