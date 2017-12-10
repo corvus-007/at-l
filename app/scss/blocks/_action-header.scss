@@ -21,7 +21,7 @@
 }
 
 .action-header__icon {
-  background-color: currentColor;
+  fill: currentColor;
 
   @include mq-min(992px) {
     margin-right: 0.5rem;

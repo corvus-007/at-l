@@ -11,7 +11,7 @@
 }
 
 .contact-info__item {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
 
   &:last-child {
     margin-bottom: 0;
@@ -21,8 +21,8 @@
 .contact-info__icon {
   position: relative;
   display: inline-block;
-  width: rem(48);
-  height: rem(48);
+  width: rem(36);
+  height: rem(36);
   margin-right: 0.5rem;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -30,15 +30,15 @@
   background-size: contain;
 
   &--location {
-    background-image: url("//placehold.it/48x48/EE046C/fff");
+    background-image: url("../images/map.svg");
   }
 
   &--tel {
-    background-image: url("//placehold.it/48x48/F75940/fff");
+    background-image: url("../images/phone.svg");
   }
 
   &--email {
-    background-image: url("//placehold.it/48x48/3F6699/fff");
+    background-image: url("../images/email.svg");
   }
 
   @include mq-min (1280px) {
@@ -48,8 +48,8 @@
       right: 40%;
       bottom: 40%;
       z-index: -1;
-      width: rem(48);
-      height: rem(48);
+      width: rem(36);
+      height: rem(36);
       border-radius: 50%;
       background-color: #ededed;
     }

@@ -1,8 +1,6 @@
 $button-common-color: $accent-color;
 $button-common-color-hover: #0862ba;
 
-
-
 @mixin make-button() {
   display: inline-flex;
   align-items: center;
